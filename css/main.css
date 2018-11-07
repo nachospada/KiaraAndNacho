@@ -1,0 +1,180 @@
+:root {
+    --primary-color: #FFF;
+    --secondary-color: #FF487C;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+/* MENU BUTTON */
+
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+}
+
+.btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: var(--secondary-color);
+    transition: all .3s ease-out;
+}
+
+/* MENU ITEMS */
+.menu-items {
+    font-family: Playball;
+    font-size: 20px;    
+    position: absolute;
+    top: 30px;
+    right: 55px;
+    z-index: 3;
+    visibility: hidden;
+    padding-right: 10px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 10px;
+}
+
+#event-btn, #photos-btn {
+    position: relative;
+}
+
+/* MENU OVERLAY */
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.menu-left, .menu-right {
+    font-family: Playball;
+    font-size: 30px;
+    color: var(--primary-color);
+    background: rgba(30, 30, 30, 0.8);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.menu-right {
+    margin: 0;
+    padding: 0;
+    transform: translate3d(0,-100%,0);
+    transition: all .4s ease-out;
+}
+
+.menu-left {
+    margin: 0;
+    padding: 0;
+    transform: translate3d(0,100%,0);
+    transition: all .5s ease-out;
+}
+
+
+.show {
+    visibility: visible;
+    transform: translate3d(0,0,0);
+}
+
+.n-portrait {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/n-portrait.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 3px var(--secondary-color) solid;
+}
+
+.k-portrait {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/k-portrait.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 3px var(--secondary-color) solid;
+}
+
+/* HOMEPAGE */
+
+main {
+    height: 100vh;
+    position: relative;
+    line-height: 1;
+    z-index: 0;
+    padding: 60px;
+    background: pink;
+}
+
+main:after {
+    position: absolute;
+    background-image: url(../img/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#home {
+    overflow: hidden;
+}
+
+#home h1 {
+    margin-top: 20vh;
+}
+
+.lg-heading {
+    font-family: Playball;
+    font-size: 100px;
+    font-weight: 100;
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.sm-heading {
+    padding-left: 10px;
+    font-family: Playball;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/* ANIMATION */
+
+@keyframes fromRight {
+    from {right: -100px;}
+    to {right: 0px;}  
+}
+
+@keyframes toRight {
+    from {right: 0px;}
+    to {right: -100px;}    
+}
