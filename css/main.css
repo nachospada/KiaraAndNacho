@@ -28,8 +28,9 @@ body {
     height: 3px;
     margin: 0 0 5px 0;
     background: var(--secondary-color);
-    transition: all .3s ease-out;
+    transition: all .4s ease-out;
 }
+
 
 /* MENU ITEMS */
 .menu-items {
