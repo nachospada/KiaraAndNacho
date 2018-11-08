@@ -37,8 +37,8 @@ function toggleMenu() {
         showMenu = true; 
         
         document.getElementsByClassName('btn-line')[0].style.transform = "rotate(45deg) translate(5px, 5px)";
-        document.getElementsByClassName('btn-line')[1].style.display = "none";
-        document.getElementsByClassName('btn-line')[2].style.transform = "rotate(-45deg) translate(1px, -1px)";        
+        document.getElementsByClassName('btn-line')[1].style.opacity = "0";
+        document.getElementsByClassName('btn-line')[2].style.transform = "rotate(-45deg) translate(6px, -7px)";        
     } else {
         menuBtn.classList.remove('close'); 
         menu.classList.remove('show'); 
@@ -50,7 +50,7 @@ function toggleMenu() {
         showMenu = false;
         
         document.getElementsByClassName('btn-line')[0].style.transform = "none";
-        document.getElementsByClassName('btn-line')[1].style.display = "block";
+        document.getElementsByClassName('btn-line')[1].style.opacity = "1";
         document.getElementsByClassName('btn-line')[2].style.transform = "none";          
     }
 }
