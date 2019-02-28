@@ -3,11 +3,42 @@
 	<head>
 	    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Photos</title>
+		<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/photos.css">
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 	</head>
 	<body>
+	
+	    <header>
+           <div class="menu-btn">
+               <div class="btn-line"></div>
+               <div class="btn-line"></div>
+               <div class="btn-line"></div>
+           </div>
+           
+           <div class="menu-items">
+              <a href="index.html">Home</a>
+              <a href="#">Event</a>
+              <a href="photos.html">Photos</a>
+              <a href="#">RSVP</a>
+           </div>
+
+           <nav class="menu">
+               <div class="menu-left">
+                   <div class="n-portrait"></div>
+                   <h1>Nacho</h1>
+               </div>
+               <div class="menu-right">
+                   <div class="k-portrait"></div>
+                   <h1>Kiara</h1>
+               </div>
+           </nav>
+        </header>
 		
 		<!-- PORTFOLIO -->
 		
@@ -44,21 +75,18 @@
               <i id="prevImg" class="fas fa-chevron-left fa-3x" onclick="prevSlide()"></i>
               <!--<div id="caption"></div>-->
         </div>
+        
+        <script src="js/main.js"></script>   
 
 	</body>
 
 	<script>
-		function openMenu() {
-			var x = document.getElementById("myLinks");
-			if (x.style.display === "block") {
-			    x.style.display = "none";
-			} else {
-			    x.style.display = "block";
-			}
-		}
         
         // Get the modal
         var modal = document.getElementById('myModal');
+        
+        // Get Menu Bars
+        var menuLines = document.querySelector('.menu-btn');
         
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
@@ -68,148 +96,169 @@
         var i = 0;
         
         function show1() {
-			i = 1;
+			i = 0;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show2() {
-			i = 2;
+			i = 1;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show3() {
-			i = 3;
+			i = 2;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show4() {
-			i = 4;
+			i = 3;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show5() {
-			i = 5;
+			i = 4;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show6() {
-			i = 6;
+			i = 5;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show7() {
-			i = 7;
+			i = 6;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show8() {
-			i = 8;
+			i = 7;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show9() {
-			i = 9;
+			i = 8;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show10() {
-			i = 10;
+			i = 9;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show11() {
-			i = 11;
+			i = 10;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show12() {
-			i = 12;
+			i = 11;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show13() {
-			i = 13;
+			i = 12;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show14() {
-			i = 14;
+			i = 13;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show15() {
-			i = 15;
+			i = 14;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show16() {
-			i = 16;
+			i = 15;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show17() {
-			i = 17;
+			i = 16;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show18() {
-			i = 18;
+			i = 17;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show19() {
-			i = 19;
+			i = 18;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show20() {
-			i = 20;
+			i = 19;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
         
         function show21() {
-			i = 21;
+			i = 20;
 			x = document.images[i].src;
+            menuLines.style.display = "none";
 			modal.style.display = "block";
 			modalImg.src = x;
 		}
@@ -233,6 +282,7 @@
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {                 
             modal.style.display = "none";
+            menuLines.style.display = "block";
         }
         
 	</script>
