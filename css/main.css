@@ -1,7 +1,10 @@
 :root {
     --primary-color: #FFF;
-    --secondary-color: #FF487C;
-    --terciary-color: pink;
+/*    --secondary-color: #FF487C;*/
+/*    --terciary-color: pink;*/
+    
+    --secondary-color: #AA8B5B;
+    --terciary-color: #F7E7CE;
 
 }
 
@@ -140,7 +143,9 @@ main:after {
     background-image: url(../img/background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.7;
+    background-position: center;
+    transform: scaleX(-1);
+/*    opacity: 0.9;*/
     content: "";
     top: 0;
     right: 0;
@@ -151,16 +156,25 @@ main:after {
 
 #home {
     overflow: hidden;
+    
 }
 
+.text {
+    position: absolute;
+    top: 28%;
+}
+
+/*
 #home h1 {
     margin-top: 20vh;
 }
+*/
 
 .lg-heading {
     font-family: Playball;
     font-size: 100px;
     font-weight: 100;
+    text-shadow: 0 0 50px var(--terciary-color);
 }
 
 .text-secondary {
@@ -177,7 +191,8 @@ main:after {
 /* FOOTER */
 footer {
     font-size: 12px;
-    color: #ccc;
+    font-family: Patua One;
+    color: var(--secondary-color);
     position: absolute;
     bottom: 5px;
     right: 10px;
