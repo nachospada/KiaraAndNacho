@@ -1,0 +1,18 @@
+body {
+    background-image: url(../img/background2.jpeg);
+    background-position: top;
+    background-size: cover;
+/*    opacity: 0.8;*/
+}
+
+.form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    opacity: 0.85;
+}
