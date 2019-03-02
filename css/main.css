@@ -34,7 +34,6 @@ body {
     margin: 0 0 5px 0;
     background: var(--secondary-color);
     transition: all .4s ease-out;
-    box-shadow: 0 0 1px var(--terciary-color);
 }
 
 
