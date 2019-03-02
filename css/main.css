@@ -32,7 +32,7 @@ body {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: var(--secondary-color);
+    background: var(--terciary-color);
     transition: all .4s ease-out;
 }
 
