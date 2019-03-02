@@ -13,15 +13,15 @@ menuBtn.addEventListener('mouseover', hoverOn);
 menuBtn.addEventListener('mouseout', hoverOff);
 
 function hoverOn() {
-    document.getElementsByClassName('btn-line')[0].style.background = "var(--secondary-color)";
-    document.getElementsByClassName('btn-line')[1].style.background = "var(--secondary-color)";
-    document.getElementsByClassName('btn-line')[2].style.background = "var(--secondary-color)";
+    document.getElementsByClassName('btn-line')[0].style.background = "#fff";
+    document.getElementsByClassName('btn-line')[1].style.background = "#fff";
+    document.getElementsByClassName('btn-line')[2].style.background = "#fff";
 }
 
 function hoverOff() {
-    document.getElementsByClassName('btn-line')[0].style.background = "var(--terciary-color)";
-    document.getElementsByClassName('btn-line')[1].style.background = "var(--terciary-color)";
-    document.getElementsByClassName('btn-line')[2].style.background = "var(--terciary-color)";
+    document.getElementsByClassName('btn-line')[0].style.background = "var(--secondary-color)";
+    document.getElementsByClassName('btn-line')[1].style.background = "var(--secondary-color)";
+    document.getElementsByClassName('btn-line')[2].style.background = "var(--secondary-color)";
 }
 
 
