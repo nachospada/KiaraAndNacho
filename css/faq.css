@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+:root {
+    --primary-color: #FFF;
+/*    --secondary-color: #FF487C;*/
+/*    --terciary-color: pink;*/
+    
+    --secondary-color: #AA8B5B;
+    --terciary-color: #F7E7CE;
+
+}
+
+body {
+    background-image: url(../img/background3.jpeg);
+    background-position: top;
+    background-size: cover;
+}
+
+.form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questions {
+    overflow: scroll;
+    text-align: center;
+    opacity: 0.85;
+    height: 85vh;
+    width: 45vw;
+    background: #fff;
+    border-top: 8px var(--secondary-color) solid;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    box-shadow: 0 0 5px #555;
+    padding: 40px;
+    font-family: EB Garamond;
+}
+
+.questions h2 {
+    margin-bottom: 15px;
+}
+
+.questions p {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+/*
+#gents{
+    color: var(--secondary-color);
+}
+
+#ladies {
+    color: var(--secondary-color);
+}
+*/
+
+hr {
+    height: 3px;
+    width: 80%;
+    background: var(--secondary-color);
+    margin: 30px auto;
+}
+
+.color1 {
+    margin: 5px;
+    display: inline;
+    padding: 5px 15px;
+    background: #f9cb8d;
+    border-radius: 50%;
+}
+
+.color2 {
+    margin: 5px;
+    display: inline;
+    padding: 5px 15px;
+    background: #fad6a5;
+    border-radius: 50%;
+}
+
+.color3 {
+    margin: 5px;
+    display: inline;    
+    padding: 5px 15px;
+    background: #fbe1bd;
+    border-radius: 50%;
+}
+
+.color4 {
+    margin: 5px;
+    display: inline;    
+    padding: 5px 15px;
+    background: #facfa5;
+    border-radius: 50%;
+}
+
+#clothes {
+    margin-top: 20px;
+}
+
+.hashtag {
+    font-weight: 700;
+}
