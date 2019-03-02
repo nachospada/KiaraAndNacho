@@ -66,6 +66,22 @@ hr {
     margin: 30px auto;
 }
 
+.color0 {
+    margin: 5px;
+    display: inline;
+    padding: 5px 15px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+}
+
+.color01 {
+    margin: 5px;
+    display: inline;
+    padding: 5px 15px;
+    background: #b79d75;
+    border-radius: 50%;
+}
+
 .color1 {
     margin: 5px;
     display: inline;
