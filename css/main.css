@@ -57,13 +57,13 @@ body {
 
 .dateBox {
 /*    background: var(--secondary-color);*/
-    background: rgba(255,255,255,.6);
+/*    background: rgba(255,255,255,.6);*/
     box-shadow: 0 0 5px #333;
-    text-shadow: 0 0 5px var(--terciary-color);
+    text-shadow: 0 0 5px #222;
     font-family: Patua One;
     font-size: 14px;
 /*    color: var(--secondary-color);*/
-    color: black;
+    color: var(--secondary-color);
     padding: 5px;
     display: flex;
     flex-direction: column;
