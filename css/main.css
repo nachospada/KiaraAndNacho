@@ -37,6 +37,40 @@ body {
     transition: all .4s ease-out;
 }
 
+/* DATE DISPLAY */
+
+.dateDisplay {
+    position: absolute;
+    right: 100px;
+    top 20px;
+    z-index: 3;
+/*    align-self: center;*/
+    width: 20%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+    transition: all .4s ease-out;
+}
+
+.dateBox {
+/*    background: var(--secondary-color);*/
+    box-shadow: 0 0 5px #555;
+    text-shadow: 0 0 2px #000;
+    font-family: Patua One;
+    font-size: 14px;
+    color: var(--secondary-color);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+/*    width: 80px;*/
+/*    height: 70px;*/
+    text-align: center;
+    border: 1px var(--secondary-color) solid;
+    border-radius: 2px;
+}
+
 
 /* MENU ITEMS */
 .menu-items {
@@ -190,39 +224,6 @@ main:after {
     font-size: 18px;
     font-weight: 100;
 }
-
-.dateDisplay {
-    position: absolute;
-    right: 100px;
-    top 20px;
-    z-index: 3;
-/*    align-self: center;*/
-    width: 20%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 5px;
-    transition: all .4s ease-out;
-}
-
-.dateBox {
-/*    background: var(--secondary-color);*/
-    box-shadow: 0 0 5px #555;
-    text-shadow: 0 0 2px #000;
-    font-family: Patua One;
-    font-size: 14px;
-    color: var(--secondary-color);
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-/*    width: 80px;*/
-/*    height: 70px;*/
-    text-align: center;
-    border: 1px var(--secondary-color) solid;
-    border-radius: 2px;
-}
-
 
 /* FOOTER */
 footer {
