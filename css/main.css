@@ -57,21 +57,23 @@ body {
 
 .dateBox {
 /*    background: var(--secondary-color);*/
-    box-shadow: 0 0 5px #555;
-    text-shadow: 0 0 2px #000;
+    background: rgba(255,255,255,.6);
+    box-shadow: 0 0 5px #333;
+    text-shadow: 0 0 10px var(--forth-color);
     font-family: Patua One;
     font-size: 14px;
-    color: var(--secondary-color);
+/*    color: var(--secondary-color);*/
+    color: black;
     padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 20px;
-/*    width: 80px;*/
-/*    height: 70px;*/
+    width: 70px;
+    height: 70px;
     text-align: center;
-    border: 1px var(--secondary-color) solid;
-    border-radius: 2px;
+    border: 2px var(--secondary-color) solid;
+    border-radius: 50%;
 }
 
 
