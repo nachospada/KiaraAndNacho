@@ -59,7 +59,7 @@ body {
 /*    background: var(--secondary-color);*/
     background: rgba(255,255,255,.6);
     box-shadow: 0 0 5px #333;
-    text-shadow: 0 0 10px var(--forth-color);
+    text-shadow: 0 0 5px var(--terciary-color);
     font-family: Patua One;
     font-size: 14px;
 /*    color: var(--secondary-color);*/
