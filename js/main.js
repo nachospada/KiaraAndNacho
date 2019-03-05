@@ -34,7 +34,7 @@ function toggleMenu() {
         menuRight.classList.add('show'); 
         menuItems.classList.add('show');
         
-        dateDisplay.style.opacity = "0";
+//        dateDisplay.style.opacity = "1";
 //        dateDisplay.style.transform = "translate3d(-80%,0,0)";
         
         //SET MENU STATE
@@ -51,7 +51,7 @@ function toggleMenu() {
         menuRight.classList.remove('show'); 
         menuItems.classList.remove('show');
         
-        dateDisplay.style.opacity = "1";
+//        dateDisplay.style.opacity = "0";
 //        dateDisplay.style.transform = "translate3d(0,0,0)";
         
         //SET MENU STATE
@@ -63,6 +63,7 @@ function toggleMenu() {
         
     }
 }
+
 
 
 // Set the date we're counting down to

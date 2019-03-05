@@ -12,15 +12,6 @@
     <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135520792-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-135520792-1');
-    </script>
 </head>
 <body>
    
@@ -32,11 +23,29 @@
            </div>
            
            <div class="menu-items">
-              <a href="index.html">Home</a>
-              <!-- <a href="#">Event</a> -->
+              <a href="index.html" id="home">Home</a>
+              <a href="#">Event</a>
               <a href="photos.html">Photos</a>
               <a href="rsvp.html">RSVP</a>
               <a href="#">FAQ</a>
+              <div class="dateDisplay" id="date">    
+                    <div class="dateBox">    
+                        <p id="days"></p>    
+                        <p>Days</p>
+                    </div>  
+                    <div class="dateBox">    
+                        <p id="hours"></p>
+                        <p>Hours</p>
+                    </div> 
+                    <div class="dateBox">    
+                        <p id="minutes"></p>
+                        <p>Minutes</p>
+                    </div>  
+                    <div class="dateBox">    
+                        <p id="seconds"></p>
+                        <p>Seconds</p>
+                    </div> 
+              </div> 
            </div>
 
            <nav class="menu">
