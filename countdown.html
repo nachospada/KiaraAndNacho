@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>K&N | RSVP</title>
+    <title>K&N | Countdown</title>
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">        
     <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">        
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/rsvp.css">
+    <link rel="stylesheet" href="css/countdown.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     
@@ -54,9 +54,30 @@
            </nav>
     </header>
    
-    <div class="form animated fadeInUp">   
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvSrK2gibH1VDKoZg-8LdUGcs-1WjxYmSmZGfFNaTAqyfr-g/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-    </div>   
+    <div class="countdownContainer animated fadeInUp">    
+        <div class="countdownBlock">   
+               <h1>08 February 2020</h1>
+               <h4>03.00pm - 12.00am</h4>
+               <div class="dateDisplay" id="date">    
+                    <div class="dateBox">    
+                        <p id="days"></p>    
+                        <p id="dateText">Days</p>
+                    </div>  
+                    <div class="dateBox">    
+                        <p id="hours"></p>
+                        <p id="dateText">Hours</p>
+                    </div> 
+                    <div class="dateBox">    
+                        <p id="minutes"></p>
+                        <p id="dateText">Minutes</p>
+                    </div>  
+                    <div class="dateBox">    
+                        <p id="seconds"></p>
+                        <p id="dateText">Seconds</p>
+                    </div> 
+              </div> 
+        </div> 
+    </div>      
     
     <script src="js/secondary.js"></script>
     

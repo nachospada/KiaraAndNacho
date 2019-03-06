@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+@import url('https://fonts.googleapis.com/css?family=Srisakdi:700');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Playball');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+
+
+:root {
+    --primary-color: #FFF;
+/*    --secondary-color: #FF487C;*/
+/*    --terciary-color: pink;*/
+    
+    --secondary-color: #AA8B5B;
+    --terciary-color: #F7E7CE;
+
+}
+
+body {
+    background-image: url(../img/background4.jpeg);
+    background-position: top;
+    background-size: cover;
+}
+
+.countdownContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.countdownBlock {
+    position: relative;
+    height: 75vh;
+    width: 70vw;
+    opacity: 0.8;
+    background: #fff;
+    border-top: 8px #bda659 solid;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    box-shadow: 0 0 5px #555;
+    padding: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1 {
+    font-family: Playball;
+    font-size: 4rem;
+}
+
+h4 {
+    font-family: Playball;
+}
+
+/* DATE DISPLAY */
+
+.dateDisplay {
+    margin-top: 30px;
+    z-index: 2;
+    align-self: center;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+    transition: all .4s ease-out;
+}
+
+.dateBox {
+    margin-top: 30px;
+    background: rgba(186,159,67,.8);
+    padding: 20px;
+    font-family: Patua One;
+    font-size: 4rem;
+    color: #fff;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #444;
+}
+
+#dateText {
+    font-size: 1rem;
+}
