@@ -29,6 +29,10 @@ body {
 */
 }
 
+a {
+    color: var(--secondary-color);
+}
+
 /*
 @keyframes comeIn{
     0% {
@@ -84,51 +88,37 @@ hr {
     margin: 30px auto;
 }
 
-.color0 {
-    margin: 5px;
-    display: inline;
-    padding: 5px 15px;
-    background: var(--secondary-color);
-    border-radius: 50%;
+.color-palette {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.color01 {
-    margin: 5px;
-    display: inline;
-    padding: 5px 15px;
-    background: #b79d75;
-    border-radius: 50%;
+.color {
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
 }
 
 .color1 {
     margin: 5px;
-    display: inline;
-    padding: 5px 15px;
-    background: #f9cb8d;
+    background: #d2b48c;
     border-radius: 50%;
 }
 
 .color2 {
     margin: 5px;
-    display: inline;
-    padding: 5px 15px;
     background: #fad6a5;
     border-radius: 50%;
 }
 
 .color3 {
     margin: 5px;
-    display: inline;    
-    padding: 5px 15px;
     background: #fbe1bd;
-    border-radius: 50%;
-}
-
-.color4 {
-    margin: 5px;
-    display: inline;    
-    padding: 5px 15px;
-    background: #facfa5;
     border-radius: 50%;
 }
 
@@ -138,4 +128,17 @@ hr {
 
 .hashtag {
     font-weight: 700;
+}
+
+i {
+    color: var(--secondary-color);
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    text-align: left;
+    padding-left: 5px;
 }
