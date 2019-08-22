@@ -116,7 +116,7 @@ td {
 
 @media (max-width:800px) {
     .questions {
-        width: 80%;
+        width: 90%;
         height: 75vh;
     }
 }
