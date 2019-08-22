@@ -16,3 +16,9 @@ iframe {
     opacity: 0.85;
     height: 85vh;
 }
+
+@media (max-width:800px) {
+    iframe {
+        height: 75vh;
+    }
+}

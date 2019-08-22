@@ -1,8 +1,5 @@
 :root {
     --primary-color: #FFF;
-/*    --secondary-color: #FF487C;*/
-/*    --terciary-color: pink;*/
-    
     --secondary-color: #AA8B5B;
     --terciary-color: #f9cb8d;
     --forth-color: #855007;
@@ -22,7 +19,7 @@ body {
 /* MENU BUTTON */
 
 .menu-btn {
-    position: absolute;
+    position: fixed;
     z-index: 3;
     right: 35px;
     top: 35px;
@@ -110,6 +107,30 @@ body {
     transition: all .5s ease-out;
 }
 
+.menu-mobile {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.9);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transform: translate3d(0,-100%,0);
+    transition: all .4s ease-out;
+}
+
+.menu-mobile a {
+    font-size: 40px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+}
+
 
 .show {
     visibility: visible;
@@ -136,6 +157,7 @@ body {
     border: 3px var(--secondary-color) solid;
 }
 
+
 /* HOMEPAGE */
 
 main {
@@ -154,7 +176,6 @@ main:after {
     background-repeat: no-repeat;
     background-position: center;
     transform: scaleX(-1);
-/*    opacity: 0.9;*/
     content: "";
     top: 0;
     right: 0;
@@ -174,12 +195,6 @@ main:after {
     position: absolute;
     top: 28%;
 }
-
-/*
-#home h1 {
-    margin-top: 20vh;
-}
-*/
 
 .lg-heading {
     color: #000;
@@ -209,4 +224,43 @@ footer {
     position: absolute;
     bottom: 5px;
     right: 10px;
+}
+
+
+/*-------------------------------------
+            MEDIA QUERIES
+--------------------------------------*/
+
+@media (max-width:800px) {
+    main:after{
+        background-image: url(../img/bg-mobile.jpg);
+    }
+
+    .menu-btn {
+        top: 5%;
+        right: 8%;
+    }
+
+    .menu-mobile {
+        display: flex;
+    }
+
+    .text {
+        top: 2%;
+        left: 5%;
+    }
+
+    .lg-heading {
+        font-size: 80px;
+    }
+
+    .sm-heading {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    .menu, .menu-items {
+        display: none;
+    }
+
 }

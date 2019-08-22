@@ -96,6 +96,34 @@ h4 {
     text-shadow: 2px 2px 5px #444;
 }
 
-#dateText {
+.dateText {
     font-size: 1rem;
+}
+
+@media (max-width:800px) {
+    .countdownBlock {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .dateDisplay {
+        grid-template-columns: 1fr;
+    }
+
+    .dateBox {
+        font-size: 30px;
+        margin-top: 0;
+        height: auto;
+        padding: 15px;
+    }
 }

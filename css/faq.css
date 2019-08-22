@@ -2,9 +2,6 @@
 
 :root {
     --primary-color: #FFF;
-/*    --secondary-color: #FF487C;*/
-/*    --terciary-color: pink;*/
-    
     --secondary-color: #AA8B5B;
     --terciary-color: #F7E7CE;
 
@@ -23,28 +20,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-/*
-    animation-name: comeIn;
-    animation-duration: 0.6s;
-*/
 }
 
 a {
     color: var(--secondary-color);
 }
-
-/*
-@keyframes comeIn{
-    0% {
-        bottom: -100px;
-        opacity: 0;
-    }
-    100% {
-        bottom: 0px;
-        opacity: 1;
-    }
-}
-*/
 
 .questions {
     overflow: scroll;
@@ -70,16 +50,6 @@ a {
     font-weight: 100;
     margin-top: 0;
 }
-
-/*
-#gents{
-    color: var(--secondary-color);
-}
-
-#ladies {
-    color: var(--secondary-color);
-}
-*/
 
 hr {
     height: 3px;
@@ -141,4 +111,12 @@ table {
 td {
     text-align: left;
     padding-left: 5px;
+}
+
+
+@media (max-width:800px) {
+    .questions {
+        width: 80%;
+        height: 75vh;
+    }
 }
