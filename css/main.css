@@ -114,10 +114,10 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
+    padding-top: 25%;
     background: rgba(0,0,0,.9);
     display: none;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     visibility: hidden;
     transform: translate3d(0,-100%,0);
@@ -233,6 +233,7 @@ footer {
 @media (max-width:800px) {
     main:after{
         background-image: url(../img/bg-mobile.jpg);
+        filter: brightness(1.2);
     }
 
     .menu-btn {
